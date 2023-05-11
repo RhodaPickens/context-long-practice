@@ -1,5 +1,5 @@
 function allTheArgs(func, ...args) {
-   return func.bind(null, ...args);
+   return func.bind(this, ...args); // make this the context
 }
 
 

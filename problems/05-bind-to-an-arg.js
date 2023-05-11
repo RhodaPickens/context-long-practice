@@ -1,5 +1,5 @@
 function bindToAnArg(func, arg) {
-  return func.bind(null, arg); // add null as first argument for if there is no argument sent
+  return func.bind(this, arg); // make this the context
 }
 
 // Test Examples:
